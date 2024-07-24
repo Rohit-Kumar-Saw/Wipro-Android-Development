@@ -1,0 +1,35 @@
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* navigation bar styling*/
+.nav-bar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* navigation item style*/
+.nav {
+    margin: 0;
+
+}
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* highlite the current section or page*/
+.nav a:hover,
+.nav a.active {
+    background-color: #555;
+    color: white;
+}
+section {
+    padding: 50px;
+}
