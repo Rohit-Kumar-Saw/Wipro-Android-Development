@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvDeviceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Status:"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/btnToggleLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Light"
+            android:layout_below="@id/tvDeviceStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <Switch
+            android:id="@+id/switchThermostat"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Thermostat"
+            android:layout_below="@id/btnToggleLight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_below="@id/switchThermostat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+</layout>

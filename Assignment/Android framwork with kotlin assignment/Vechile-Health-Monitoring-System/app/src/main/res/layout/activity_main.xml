@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.vehicle_health_monitoring_system.VehicleHealthViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/engineHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.engineHealth}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/oilLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/engineHealth"
+            android:text="@{viewModel.oilLevel}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tirePressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oilLevel"
+            android:text="@{viewModel.tirePressure}"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tirePressure"
+            android:text="Settings" />
+
+    </RelativeLayout>
+</layout>

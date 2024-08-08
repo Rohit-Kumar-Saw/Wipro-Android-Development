@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextUserSetting"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="User Setting" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_below="@id/editTextUserSetting"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+</layout>
